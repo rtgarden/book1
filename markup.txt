@@ -1,1 +1,86 @@
 a quick page for markup notes on github pages
+
+Writing Web Content with Markdown
+
+
+To form a paragraph simply write it down, and hit enter to start a new paragraph. 
+
+You can use the asterisk mark to set (double) Bold, or (single) Italic.
+*Lorem ipsum*  
+**Lorem ipsum** 
+
+Headings
+    #Heading 1  <h1></h1>
+    ##Heading 2  
+    ###Heading 3  
+    ####Heading 4  
+    #####Heading 5  
+    ######Heading 6  
+    
+    To create an unordered list, initiate the line with an asterisk or a dash.
+
+    * this is list  
+    * this is list  
+    * this is list  
+    
+  - this is list  
+  - this is list  
+  - this is list  
+  
+  To create an unordered list, initiate the line with number, as follows.
+
+    1. this is list 1  
+    2. this is list 2  
+    3. this is list 3
+    
+    You can differentiate list level simply with spaces.
+
+    1. Hello  
+       2. Hello  
+          3. Hello
+          
+          use a dash for a line break
+----------------------------
+or
+==========================
+
+
+
+To form blockquote, initiate the lines with a > sign, like so.
+view plaincopy to clipboardprint?
+
+    > Duis aute irure dolor in reprehenderit in voluptate velit esse  
+    > cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non  
+    > proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  
+
+This example will be wrapped with a <blockquote> element
+
+
+
+
+
+
+
+
+Link
+
+To create a clickable text link, you can wrap the text with square brackets, with the URL in parentheses, like so.
+
+    [Hongkiat.com](http://www.hongkiat.com/blog/)  
+    
+
+Image
+
+Adding an image is similar to adding text link. In Markdown, an image, is initiated with an exclamation mark. Wrap the image alt text in a square bracket, and the image URL with parentheses, like so.
+
+    ![image](http://imageurl.jpg) 
+    
+
+    
+ You can also insert image title in this way.
+
+    ![image](http://imageurl.jpg "Image Title")    
+    
+    
+    
+    
