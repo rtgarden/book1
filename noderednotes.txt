@@ -2,6 +2,8 @@ to start node red
 
 node red.js
 
+(from in the node red directory use ls to check if it doesnt work cd to change)
+
 control-c to exit node red in terminal
 
 mqtt broker: smartobjectservice.com
