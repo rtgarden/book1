@@ -1,3 +1,7 @@
+to start node red
+
+node red.js
+
 control-c to exit node red in terminal
 
 mqtt broker: smartobjectservice.com
