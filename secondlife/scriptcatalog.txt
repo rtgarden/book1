@@ -4,4 +4,7 @@ uses and context.
 
 
 scripts:
+
+poseball.rtf
+poseballconfig.rtf
 -----------
