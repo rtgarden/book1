@@ -1,0 +1,26 @@
+\version "2.12.3"
+\header { title = "Spirit of the Dance" composer = "traditional jig" }
+\relative c' {
+\key d \major
+\time 6/8
+\repeat volta 2 {
+d'4^"D" a8 b4 a8
+d4^"Em" a8 b4 a8
+d8^"G" e8 fis8 g4 fis8
+e8^"A" fis8 d8 cis8 b8 a8 \break
+d4^"D" a8 b4 a8
+d4^"Bm" a8 b4 a8
+d8^"G" e8 fis8 g8 a8 b8
+a8^"A7" e8 cis8 d4.^"D" \break
+ } 
+\repeat volta 2 {
+a8^"A" cis8 e8 g4.^"G"
+fis4.^"D" e4.^"Em"
+a,8^"D" d8 fis8 a4.^"A"
+g4.^"G" fis4.^"Bm" \break
+a,8^"A" cis8 e8 g4.^"G"
+fis4.^"Bm" e4^"A" fis8
+g8^"G" a8 b8 a8^"D" fis8 d8
+fis4^"A7" e8 d4.^"D"
+ }
+}
