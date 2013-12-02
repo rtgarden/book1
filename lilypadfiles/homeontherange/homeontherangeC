@@ -1,0 +1,59 @@
+\version "2.12.3"
+\header { title = "Home on the Range" composer = "American traditional" }
+\relative c'' {
+\key c \major
+\time 3/4
+\repeat volta 2 {
+\partial 4
+g4
+g4 c4 d4
+e2 c8 b8
+a4(f'4 f4)
+f2 f8 f8
+g4 c,4 c4
+c4(b4 c4)
+d2. 
+(d2) g,4
+g4(c4) d4
+e2 c8(b8)
+a4(f'4 f4) 
+f2 f8 f8
+e4. d8 c4
+b4(c4) d4
+c2.
+(c4) r4 } \break
+\time 3/4
+\repeat volta 2 {
+\partial 2.
+g'2.
+f4 e4. d8
+e2. ~
+e2 g,8 g8
+c4 c4 c4
+c4(b4 c4) 
+d2. ~
+d4 r4 g,4
+g4(c4) d4
+e2 c8 b8
+(a4 f'4 f4)
+f2 f8 f8
+e4. d8 c4
+b4(c4) d4
+c2. ~
+c2 r4 }
+}
+
+\addlyrics {
+oh give me a home,
+where the buffalo roam,
+where the deer and the antelope play.
+Where seldom is heard,
+a dis-cour-a-ging word,
+and the skies are not cloudy,
+all day,
+home home on the range
+where the deer and the antelope play
+where never is heard
+a dis-couraging word,
+and the skies are not cloudy all day.
+  }
