@@ -1,0 +1,28 @@
+\version "2.12.3"
+\header { title = "Whiskey Before Breakfast (Speed the Plow)" composer = "traditional" }
+\relative c' {
+\key d \major
+\time 4/4
+\repeat volta 2 {
+d8[^"D" e8] fis8[ g8] a4 a8[ a8]
+a8[^"D" b8] a8[ g8] fis8 e8 d4
+g4^"G/G" b8 g8 fis4^"D/F" a8 fis8
+e8[^"A/E" d8] e8[ fis8] g8[ fis8] e8 fis8 \break
+d8[^"D" e8] fis8[ g8] a4 a8 a8
+a8[^"D" b8] a8[ g8] fis8[ e8] d4
+g4^"G/G" b8 g8 fis4^"D/F" a8 fis8
+e8[^"A/E" d8] e8[ fis8] d2^"D/D" } \break
+\repeat volta 2 {
+d'4^"D" d8 d8 d4 d8 d8
+d4^"D" d8 d8 b4 a4
+e'4^"A" e8 e8 e4 e8 fis8
+g8 fis8 e8 d8 b4 a4 \break
+d8[^"D/D" fis8] e8[ d8] cis8[^"A/C" e8] d8[ cis8]
+b8[^"G/B" d8] cis8[ b8] a8[^"D/A" fis8] e8[ d8]
+g8[^"G/G" b8] a8[ g8] fis8[^"D/F" a8] g8[ fis8]
+e8[^"A/E" d8] e8[ fis8] d4^"D/D" r4 }
+
+
+
+
+}
