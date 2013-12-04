@@ -1,0 +1,15 @@
+to start node red
+
+node red.js
+
+(from in the node red directory use ls to check if it doesnt work cd to change)
+
+control-c to exit node red in terminal
+
+mqtt broker: smartobjectservice.com
+
+sensor path set to: /sensors/rhvWeather-01/wind_gust
+
+/sensors/rhvWeather-01/outdoor_temperature
+---------
+there are more sensor types
