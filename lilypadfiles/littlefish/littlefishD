@@ -1,0 +1,75 @@
+\version "2.12.3"
+\header{
+  title = "Little Fish"
+  composer = "traditional"
+}
+ \relative c' {
+    \key d \major
+    \time 3/4
+    \partial 4
+    d8 d8 
+    fis4 fis4 fis4 
+    a4 g4 fis4
+    e4 d4 e4
+    fis2 d8 e8
+    fis4(fis4) fis4
+    a4(g4) fis4
+    e4(d4) e4
+    d2 d4
+    d'2 cis8(b8)
+    a4(fis4) a4
+    e4(fis4) e4
+    fis2 d'4
+    d2 cis8(b8)
+    a4(fis4) a4
+    g4(fis4) e4
+    d2. \bar "|."    
+ }
+ 
+  \addlyrics {
+    theres a
+    song in my 
+    heart for the
+    one I love     
+    best and her
+    picture is 
+    tatooed all
+    over my 
+    chest yea-
+    ho little fish
+    dont cry 
+    dont cry
+    yea ho 
+    little fish
+    dont cry 
+    dont cry
+    There are fish
+    in the sea
+    theres no doubt about it
+    just as good
+    as the ones
+    that have come
+    out of it
+    The crew are asleep
+    and the oceans at rest
+    and im singing tis song
+    to the one
+    I love best
+  }
+  \markup {
+  \column {
+    \line { Verse 3: }
+    \line { There are fish in the sea, there's no doubt about it, }
+    \line { Just as good as the ones that have come out of it, }
+    \line { Chorus: }
+    \line { yea ho little fish, don't cry, don't cry }
+    \line { yea ho little fish, don't cry, don't cry }
+    \line { Verse 4: }
+    \line { The crew are asleep and the oceans at rest, }
+    \line { And I'm singing this song to the one I love best, }
+    \line { Chorus: }
+    \line { yea ho little fish, don't cry, don't cry }
+    \line { yea ho little fish, don't cry, don't cry }  }
+}
+
+

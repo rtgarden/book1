@@ -1,0 +1,24 @@
+\version "2.12.3"
+\header { title = "Dick Gossip's (Castle Reel)" composer = "traditional reel" }
+\relative c' {
+\key d \major
+\time 4/4
+\repeat volta 2 {
+fis4 a8 fis8 g8 fis8 e8 d8
+fis4 a8 fis8 g8 fis8 e8 d8
+e4.\mordent fis8 g8 fis8 e8 d8
+e4.\mordent fis8 g8 fis8 e8 d8
+fis4 a8 fis8 g8 fis8 e8 d8
+fis4 a8 fis8 g8 fis8 e8 d8
+a'8 b8 d8 e8 fis8 g8 e8 cis8 }
+\alternative { {d8 fis8 e8 cis8 d8 b8 a8 g8} {d'8 fis8 e8 cis8 d4 e8 fis8} } \break
+\repeat volta 2 {
+g8 b,8 b4\mordent g'8 b,8 a'8 b,8
+g'8 b,8 b4\mordent g'8 fis8 e8 d8
+\times 2/3 {cis8 b8 a8} e'8 a,8 fis'8 a,8 e'8 a,8
+\times 2/3 {cis8 b8 a8} e'8 a,8 cis8 d8 e8 fis8
+g8 b,8 b4\mordent g'8 b,8 a'8 b,8
+g'8 b,8 b4\mordent g'8 fis8 e8 d8
+cis8 d8 e8 fis8 g8 e8 cis8 e8 }
+\alternative { {d8 fis8 e8 cis8 d4 e8 fis8} {d8 fis8 e8 cis8 d2} }
+}

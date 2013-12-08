@@ -1,0 +1,30 @@
+\version "2.12.3"
+\header { title = "If All the World Were Paper" composer = "traditional" }
+\relative c' {
+\key g \major
+\time 6/8
+
+\partial 8
+
+d'8
+
+\repeat volta 2 {
+
+e4 d8 e4 fis8
+g4. g,4 a8
+b4 a8 b4 c8
+d4. ~ d4 b8
+c4 b8 c4 d8
+e4 c8 a4 g'8
+fis4 d8 e4 fis8
+g4. ~ g4 g8 } \break
+\repeat volta 2 {
+fis,4 e8 fis4 g8 
+a4. d,8 d4
+g4 fis8 g4 a8
+b4. ~ b4 b8 
+c4 b8 a4 g8
+fis4 e8 d4 a'8
+d4 d,8 e4 fis8
+g4 ~ g4 g8 }
+}

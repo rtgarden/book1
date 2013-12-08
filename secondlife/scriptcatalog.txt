@@ -1,0 +1,10 @@
+a list of second life scripts along with breif descriptions of their
+
+uses and context.
+
+
+scripts:
+
+poseball.rtf
+poseballconfig.rtf
+-----------

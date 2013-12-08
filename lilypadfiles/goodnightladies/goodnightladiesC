@@ -1,0 +1,28 @@
+\version "2.12.3"
+\header { title = "Goodnight Ladies" composer = "traditional" }
+\relative c'' {
+\key c \major
+\time 4/4
+e4(c4) g8(c8 ~ c4)
+e4(c4) d8 (d8 ~ d4)
+e4(c4) f8 (f4 f8)
+e4. c8 d4. b8
+c2. r4 \break
+e8.(d16) c8 d8 e8(e8 e4)
+d8 d8 d4 e8 g8 g4
+e8.(d16) c8 d8 e8(e8 e4)
+d8. d16 e8 d8 c2 \break
+
+}
+
+ \addlyrics {
+ goodnight ladies
+ goodnight ladies
+ goodnight ladies
+ were going-to leave you
+ now.
+ Merrily we roll a-long
+ roll a-long roll a long
+ merrily we roll a long
+ o'er the deep blue sea
+ }

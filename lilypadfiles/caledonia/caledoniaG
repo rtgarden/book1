@@ -1,0 +1,18 @@
+\version "2.12.3"
+\header { title = "Caledonia" composer = "Australian Folk Song" }
+\relative c {
+\key g \major
+\time 4/4
+\partial 8
+    d'8 
+    g8[ b] d[ d] d[ d](d) b
+    a8. g16 g8 g8 g4. \breathe g8
+    g8[ b8] d8[ d8] e8[ d8] d8[ a8]
+    g8[ b8] d8[ d8] d4. \breathe d8 
+    g8[ g8] g8[ fis8] e8[ d8]  d8[ e8]
+    d8[ b8] g8[ b8] d4. \breathe g16 e16
+    d8[ b8] g8[ a8] b8[ g8] e8[ g8]
+    d16 d8. e8 fis8 g4 r8 \bar "|."
+  
+  }
+

@@ -1,0 +1,35 @@
+\version "2.12.3"
+\header { title = "Yankee Doodle" composer = "American traditional" }
+\relative c' {
+\key c \major
+\time 2/4
+\repeat volta 2 {
+c'16(c16) c8 d8 e8
+c8 e8 d8 g,8
+c8 c8  d8(e8)
+c4(b8) g8
+c8 c8 d8 e8
+f8 e8 d8 c8
+b8 g8 a8(b8) 
+c4(c8) r8 \bar "||" \break
+a8.(b16) a8(g8)
+a8 b8 c4
+g8.(a16) g8(f8)
+e4(g4)
+a8. b16 a8(g8)
+a8 b8 c8 a8
+g8 c8 b8 d8
+c4(c8) r8 }
+}
+ 
+ 
+ \addlyrics {
+ Fath-er and I went down to camp,
+ A long with captain Good-win,
+ and there we saw the men and boys,
+ as thick as hasty pu-din!
+ Yankee doodle keep it up,
+ Yankee doodle dan-dy,
+Mind the music and the step,
+and with the girls be han-dy.
+}

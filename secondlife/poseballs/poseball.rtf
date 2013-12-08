@@ -1,0 +1,63 @@
+
+Opensource switchable-mode pose-ball script (version 4.3)
+By CrystalShard Foo     //          Script-Foo!
+
+NOTE: Please dont contact me with problems. This is a free, open script. If you need help, just hand it to a geek you know and ask for assistance.
+
+Index:
+1.The Basic, Simple Way.
+2.The advanced way
+3.Using link messages
+4.Conclusion
+
+HOW TO USE THIS SCRIPT
+----------------------------
+
+1)The Basic, Simple Way:
+Just drop the script "poseball 4" into a poseball. Then, drop a pose inside (NOT a gesture!!), and you're done.
+The poseball with appear or disappear when clicked.
+
+You do NOT need to put ANYTHING else in the ball, other then the single Poseball script and the animation.
+
+What is the Click Broadcaster script for, then? Read part 3 to find out...
+
+2)The advanced way:
+The notecard that comes with the poseball (Pose ball - CONFIGURATION) gives you access to afew more intresting functions:
+
+- You can change the offset of the sit position using X,Y,Z coordinates. (that is, changing where you will be positioned when you sit.)
+- You can change the floating text title above the ball.
+- You can change the name of the "Sit Here" button when right-clicking on the ball.
+- You can decide if you want to use a click to make the ball hide and show, or use the commands "hide" and "show" in chat text.
+
+The way for doing this is pretty straight forward: Just open the notecard and change the values after each name.
+
+If "voice" is set to Yes,  a listener will be activated and the ball will show or hide when the command "show" or "hide" is given.
+If "voice" is set to No, any opened listener will be shut down, and the ball will wait to be clicked instead.
+
+When changing "offset", make sure to keep the < and > signs when changing the numbers. This function will fail if you do not.
+
+3)Using link_messages
+Link messages are very useful when you want to put a whole bunch of pose balls in a single linked set object. For example, a chair or a bed with more then one poseball. This way you can turn the balls on and off by a single click anywhere on the object, and without using the evil Voice command option. Remember: Every ball that listens for voice commands = lag. This is why the clicking option is the default.
+
+How to do it: Just link your poseballs with the furniture piece as you always do. Then, once done, put the click-broadcaster script in the ROOT PRIM of the furniture. It will handle the rest.
+
+You do NOT NEED to put any other copy of the click broadcaster anywhere else. This includes the poseballs.
+
+Technical bits:
+This poseball script always listens for incoming link messages. These will make the ball show or hide regardless of the setting of using Voice commands or not.
+
+The "integer" value (num) must be 99.
+The "string" value (str) can be either "show" to show, or "hide" to hide.
+
+Always put the script that senses for the click and transmit the hide/show link_message in the ROOT PRIM of the linked set.
+
+That should do it. =)
+
+4. Conclusion
+And that should sum it up. Hope you find this little script useful. Again, please dont IM me for support on this - i'm flooded with messages allready. Just hand this script and manual to a geek friend who will surely manage to figure it out.
+
+Happy posing!
+
+- CrystalShard Foo
+ 
+

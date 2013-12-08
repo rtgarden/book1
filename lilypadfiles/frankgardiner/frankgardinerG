@@ -1,0 +1,26 @@
+\version "2.12.3"
+\header { title = "Frank Gardiner"
+  composer = "Australian Folk Song" }
+\relative c' {
+\key g \major
+\time 6/8
+\partial 4. 
+    g'4 a8 
+    b4 b8 g4 b8
+    a4 g8 e4 e8
+    d4 e8 g4 g8
+    g4.r4 d'8
+    e4 d8 g4 fis8
+    e4 e8 d4 e8
+    b4 a8 g4 a8
+    e4.^\fermata r4 d'8
+    e4 d8 g4 fis8
+    e4 e8 d4 e8
+    g,4 g8 a4 g8
+    e4. g4 a8
+    b4 b8 g4 b8
+    a4 g8 e4 d8
+    d4 e8 g4 g8
+    g4.^\fermata r4. \bar "|."
+  
+  }

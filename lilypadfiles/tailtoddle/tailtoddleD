@@ -1,0 +1,20 @@
+\version "2.12.3"
+\header { title = "Tail Toddle" composer = "Scottish traditional"  }
+\relative c' {
+\key d \major
+\time 4/4
+\partial 8
+a'8
+\repeat volta 2 {
+d16^"D" d16 d8 fis8 d8 g4^"G" d8^"D" b8
+d4 fis8 d8 e4^"A" cis8 a8
+d16^"D" d16 d8 fis8 d8 g8[^"G" e8] fis8[ d8]^"D"
+e8[^"A" g8] fis8[ a8] e4 b8 a8 } \break
+\repeat volta 2 {
+\time 4/4
+\partial 1
+g'4^"G" d8[ b8 b8] g'8[ d8 b8]
+g'4 d8[ b8 a8]^"A" e'8[ cis8 a8]
+g'4^"G" b,8 g'8 a16 g16 fis16 e16 fis8 d8
+e8[^"A" fis8] g8[ a8] e4 cis8 a8 }
+}

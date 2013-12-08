@@ -1,0 +1,66 @@
+\version "2.12.3"
+\header{
+  title = "Polly Wolly Doodle"
+  composer= "American traditional"
+}
+\relative c' {
+\key g \major
+\time 4/4
+\repeat volta 2 {
+    \partial 4
+    g'8 a8 
+    b4 b4 g4 g8 a8
+    b4 b4 g4 g4 
+    b8(b8) b8(b8) c8(c8) b8 b8 
+    a2. fis8(g8) 
+    a4(a4) fis4  fis8(a8)
+    a4(a4) fis4 a4
+    d8(d8) d8(d8) c8(c8) a8 a8
+    g2. g8 a8
+    b2. g8 a8
+    b2. g8 a8
+    b4 b4 c4(b4)
+    a2. fis8 g8
+    a8 a8 a8(a8)(fis8)(fis8) fis8 g8
+    a8 a8 a8(a8)(fis8)(fis8) a4
+    d8(d8) d8(d8) c8(c8) a8 a8
+    g2. }
+  }
+  \addlyrics {
+    Oh I 
+    went down south for to
+    see my sal, sing
+    pol-ly wol-ly doo-dle all the
+    day. My
+    Sal-ly am a
+    spunky gal, sing
+    pol-ly wol-ly doo-dle all the
+    day. Fare thee
+    well, Fare thee
+    well, fare thee
+    well, my fai-ry
+    fay. For I'm
+    goin to loui-si-an-na for to
+    see my su-si-an-na, sing pol-ly wol-ly doo-dle all the 
+    day.
+  }
+  
+   \markup {
+  \column {
+    \line { V 2 }
+    \line { Oh my Sally was such a maiden fair. Singin' Polly Wolly Doodle all the day. }
+    \line { With her curly eyes and her laughing hair Sing Polly Wolly Doodle all the day. }
+    \line { V 3 }
+    \line { Oh a grasshopper sat on a railroad track, Singin Polly Wolly Doodle all the day. }
+    \line { Was a-picken his teeth with a carpet tack Sing Polly Wolly Doodle all the day. }
+    \line { V 4 }
+    \line { Oh I went to bed but it weren't no use Singin Polly Wolly Doodle all the day. }
+    \line { 'Cause my feet stuck out for a chickens roost Sing Polly Wolly Doodle all the day. }
+    \line { V 5 }
+    \line { From behind the barn, down upon my knees Singin Polly Wolly Doodle all the day. }
+    \line { I could swear I heard that 'ol chicken sneeze Sing Polly Wolly Doodle all the day }
+    \line { V 6 }
+    \line { And he sneezed so hard with the hoopun cough Singin Polly Wolly Doodle all the day. }
+    \line { That he nearly sneezed his tailfeather off  Sing Polly Wolly Doodle all the day }  }
+}
+
