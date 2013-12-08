@@ -1,0 +1,29 @@
+
+\version "2.12.3"
+
+
+\header { title = "Minuet in G"
+composer = "Bach"  }
+\relative c''  {
+  \clef treble
+  \key g \major
+  \time 3/4
+  
+  d4 g,8 a8 b8 c8
+  d4 g,4  g4 \breathe
+ e'4 c8 d8 e8 fis8
+  g4 g,4 g4
+  \breathe c4 d8 c8 b8 a8
+ b4 c8 b8 a8 g8
+  fis4 \breathe g8 a8 b8 g8
+  a2. \breathe
+  d4 g,8 a8 b8 c8 
+  d4 g,4 g4
+  \breathe e'4 c8 d8 e8 fis8
+  g4 g,4 g4
+ \breathe  c4 d8 c8 b8 a8
+  b4 c8 b8 a8 g8
+ \breathe  a4 b8 a8 g8 fis8
+  g2. \bar "|."
+  
+  }

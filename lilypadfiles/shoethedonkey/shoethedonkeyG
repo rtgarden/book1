@@ -1,0 +1,35 @@
+\version "2.12.3"
+\header { title = "Shoe the Donkey" composer = "Mazurka" }
+\relative c' {
+\key g \major
+\time 3/4
+\repeat volta 2 {
+\partial 4
+d8 g8
+b4 b4 d,8 g8
+b4 b4 d,8 g8
+b4 c4 b4 
+a2 d,8 fis8
+a4 a4 d,8 fis8
+a4 a4 d,8 fis8 \break
+a4 b4 a4 }
+\alternative { {g2} {g4.}} \bar "||"
+\partial 4.
+a8 b8 c8
+d4 g4 fis4
+a,4. g8 a8 b8
+c4 e4 d4 \break
+b4. a8 b8 c8
+b4 a4 b4
+c4. b8 c8 d8
+e4 d4 c4
+b4. a8 b8 c8
+d4 g4 fis4
+a,4. g8 a8 b8
+c4 e4 d4
+b4. a8 b8 c8
+b4 a4 b4
+c4. b8 c8 d8
+e4 d4 fis4 
+g,2 \bar "|."
+}

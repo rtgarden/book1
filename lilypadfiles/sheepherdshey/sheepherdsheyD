@@ -1,0 +1,22 @@
+\version "2.12.3"
+\header { title = "Shepherd's Hey" composer = "traditional" }
+\relative c' {
+\key d \major
+\time 3/4
+\repeat volta 2 {
+fis8 g8 a8 fis8 g2
+fis8 g8 a8 fis8 e2 \breathe
+fis8 g8 a8 fis8 g4 fis8 g8
+a4 a4 d2 }
+\repeat volta 2 {
+a8 g8 fis8 a8 g8 fis8 e8 g8 
+fis8 e8 d8 fis8 e2 \breathe
+d8 cis8 d8 e8 fis8 e8 fis8 g8
+a4 a4 d2 \breathe }
+\repeat volta 2 {
+a8 fis8 a8 fis8 b8 g8 b8 g8
+a8 fis8 a8 fis8 e2 \breathe
+d8 fis8 e8 g8 fis8 a8 g8 b8
+a4 a4 d2 \breathe }
+
+}

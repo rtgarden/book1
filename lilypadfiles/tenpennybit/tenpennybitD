@@ -1,0 +1,34 @@
+    \version "2.12.3"
+    \header{
+  title = "Tenpenny Bit"
+  composer = "Jig"
+  }
+ \relative c' {
+  \clef treble
+  \key d \major
+  \time 6/8
+     \repeat volta 1 {  
+e'8[ a, a] e'[ a, a] 
+b[ a b] g[ b d] 
+e[ a, a] e'[ a, a] 
+d[ e fis] g[ fis g] 
+e[ a, a] e'[ a, a]
+b[ a b] g[ b d] 
+e[ d b] g'[ b, b] 
+b[ a a] a4. 
+}
+    \repeat volta 1 { 
+a4 a'8 a[ g a] 
+b[ g e] d[ b g] 
+a4 a'8 a[ g a] 
+b[ a g] a4 b,8 
+a4 a'8 a[ g a]
+b[ g e] d[ b d] 
+e[ d b] g' d b] 
+b[ a a] a4. 
+}
+}
+
+
+
+

@@ -1,0 +1,28 @@
+\version "2.12.3"
+\header { title = "Wind that Shakes the Barley" composer = "traditional" }
+\relative c'' {
+\key d \major
+\time 4/4
+\partial 8
+b8
+\repeat volta 2 {
+a4 a8(b8) a8 fis8 e8 d8
+b'4 b8 a8 b8 cis8 d8 b8
+a4 a8 ~ b8 a8 fis8 e8 d8
+g'8 fis8 e8 d8 b8 cis8 d8 b8 
+a4 a8 ~ b8 a8 fis8 e8 d8
+b'4 b8 a8 b8 cis8 d8 b8
+a4 a8 ~ b8 a8 fis8 e8 d8
+g'8 fis8 e8 d8 b8 cis8 d8 e8 
+fis4 fis8 d8 g4 g8 e8
+fis4 fis8 d8 b8 cis8 d8 e8
+fis4 fis8 d8 g4 g8 e8
+fis4 fis8 d8 b8 cis8 d8 e8
+fis4 fis8 d8 g4 fis8 g8
+a8 fis8 e8 d8 b8 cis8 d8 e8 
+fis4 fis8 d8 g4 g8 e8
+fis4 fis8 d8 b8 cis8 d8 e8
+d8 e8 fis8 g8 a8 fis8 b8 fis8 }
+\alternative { { g8 fis8 e8 d8 b8 cis8 d8 b8 } {e8 a,8 b8 cis8 d8}}
+
+}

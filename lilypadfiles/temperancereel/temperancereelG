@@ -1,0 +1,26 @@
+\version "2.12.3"
+\header { title = "Temperance Reel" composer = "Traditional Reel" }
+\relative c' {
+\key g\major
+\time 4/4
+\partial 4
+\times 2/3 { d8 e fis }
+\repeat volta 2 {
+g4^"G" g8 fis8 g8[ a8] b8[ c]
+d4^"G" g8 e8 d8[ b8] a8[ c8]
+b8[^"Em" e,8] e8[ d8] e8[ fis8] g8[ a8]
+b8[^"Em" g8] a8[ fis8] g8[^"D" fis8] e8[ d8]
+g4[^"G" g8[ fis8] g8[ a8] b8[ c8]
+d4^"G" g8[ e8] d8[ b8] a8[ c8]
+b8[^"Em" e,8] e8[ d8] e8[ fis8] g8[ a8] }
+\alternative { {b8[^"D" d8] a8[ fis8] g4^"G" \times 2/3 { d8 e fis } } 
+{ b8[^"D" g8] e8[ fis8] g2} }
+\repeat volta 2 {
+b8[^"Em" e8] e8[ d8] e4 e8[ fis8]
+g8[^"Em" e8] a8[ fis8] g8[ fis8] e8[ d8]
+a8[^"D" d8] d8[ e8] d4 d8[ e8]
+fis8[^"D" d8] a'8[ fis8] g8[ fis8] e8[ d8]
+b8[^"Em" e8] e8[ d8] e4 e8[ fis8]
+g8[^"Em" e8] a8[ fis8] g8[ fis8] e8[ d8]
+b8[^"Em" a8] g8[ fis8] e8[ fis8] g8[a8] }
+\alternative { {b8[^"D" g8] a8[ fis8] g8[^"G" fis8] e8[ d8]^\fermata} } {b8[^"D" d8] a8[ fis8] g2^"G"}}
