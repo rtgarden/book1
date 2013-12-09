@@ -1,1 +1,9 @@
 #this is the image list for the locker to explain the folders.
+
+The first step is to figure out a place to keep the raw image stash.
+
+look into dropbox and other methods of connecting in to cloud serices.
+
+amazon also.
+
+something simple and possibly free,
