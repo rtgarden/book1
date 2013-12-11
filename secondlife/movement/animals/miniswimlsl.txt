@@ -1,0 +1,73 @@
+float interval = 1.0;   // seconds
+integer i;
+vector step = <0, 0.1, 0>;
+list path = ["S", "L", "S", "L", "S", "L", "S", "L"];
+
+rotation turn_left;
+rotation turn_right;
+
+init()
+{
+    vector left_90 = <0, 0, 90>;
+    left_90 *= DEG_TO_RAD;
+    turn_left = llEuler2Rot( left_90 );
+    vector right_90 = <0, 0, 30>;
+    right_90 *= DEG_TO_RAD;
+    turn_right = llEuler2Rot( right_90 );
+    
+}
+
+default
+{
+    state_entry()
+    {
+        init();
+    }
+
+    touch_start(integer total_number)
+    {
+        state swimming;
+    }
+}
+
+
+state swimming
+{
+    state_entry()
+    {
+        llWhisper(0, "begin swimming.");
+        llSetTimerEvent( interval ); 
+        i = 0;
+    }
+    
+    timer()
+    {
+        string command = llList2String( path, i );
+        
+        if ( command == "S" )
+        {
+            vector current_pos = llGetPos();
+            vector new_pos = step * llGetRot();
+            llSetPos( current_pos + new_pos );
+        }
+        else if ( command == "L" )
+        {
+            llSetRot (llGetRot() * turn_left );
+        }
+        else if ( command == "R" )
+        {
+            llSetRot (llGetRot() * turn_right );
+        }
+        i++;
+        if ( i == llGetListLength( path ) )
+            i = 0;
+    
+    }       
+    
+    touch_start(integer total_number)
+    {
+        llWhisper(0, "end swimming");
+        llSetTimerEvent( 0.0 );
+        state default;
+    }
+}
