@@ -1,0 +1,37 @@
+
+// Based on a script by Hank Ramos
+//
+// Some modifications by Shack Dougall and Ariane Brodie
+
+vector targetPos = <50, 100, 90>; //The x, y, z coordinates to teleport.
+string fltText = ""; //label that floats above Teleport
+
+reset()
+{
+    vector target;
+    
+    target = (targetPos- llGetPos()) * (ZERO_ROTATION / llGetRot());
+    llSitTarget(target, ZERO_ROTATION);
+    llSetSitText("Teleport");
+    llSetText(fltText, <1,1,1>, 1);
+}
+default
+{
+    state_entry()
+    {
+        reset();
+    }
+    
+    on_rez(integer startup_param)
+    {
+        reset();
+    }
+    
+    changed(integer change)
+    {
+        llSleep(0.15);
+        llUnSit(llAvatarOnSitTarget());
+        reset();
+    }    
+}
+
