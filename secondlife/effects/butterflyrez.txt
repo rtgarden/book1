@@ -1,0 +1,48 @@
+float BUTTERFLY_INTERVAL = 10;
+float RADIUS = 5.0;
+integer DEBUG = FALSE;
+integer IS_ON = FALSE;
+
+
+create_butterfly() {
+    vector rez_pos = llGetPos();
+    if(DEBUG) {
+      llOwnerSay("Rezzing:" + (string)rez_pos);
+      rez_pos.z += 2;
+    } else {
+        rez_pos.x += (llFrand(RADIUS) - RADIUS/2);
+        rez_pos.y += (llFrand(RADIUS) - RADIUS/2);
+        rez_pos.z += (llFrand(RADIUS/2) - RADIUS/4) + RADIUS/2;
+    }
+    
+    // Get a random object
+    integer max_inv = llGetInventoryNumber(INVENTORY_OBJECT);
+    string obj_name = llGetInventoryName(INVENTORY_OBJECT, (integer)llFrand(max_inv));
+    integer random = 100 + (integer)llFrand(100);
+    llRezObject(obj_name, rez_pos, ZERO_VECTOR, <0,0,0,1>*llGetRot(), random);
+}
+
+default {
+    state_entry() {
+        create_butterfly();
+        if(IS_ON) {
+            llSetTimerEvent(BUTTERFLY_INTERVAL);
+        }
+    }
+
+    touch_start(integer total_number) {
+        if(IS_ON) {
+            llOwnerSay("Butterflies go to sleep!");
+            llSetTimerEvent(0.0);
+        } else {
+            llOwnerSay("Wake up butterflies...");
+            create_butterfly();
+            llSetTimerEvent(BUTTERFLY_INTERVAL);
+        }
+        IS_ON = !IS_ON;
+    }
+    
+    timer() {
+        create_butterfly();
+    }
+}
