@@ -1,0 +1,41 @@
+//This is where Global Key can be placed
+
+//Defult is the word used to tell the script to start here
+default
+{
+// Th Opend { is the opening to the script Most of your other commands will be placed after this    
+    state_entry()
+    
+//state_entry is a start command whitch tells the script that the commands under it will happen as soon as the script is started
+    {
+//The opening { for state entry     
+        llSay(0, "Hello, Avatar!");
+//Say our very first command a simple one the object simple says "Hello, Avatar" as soon as the script is initialized/started
+        llSetText("Learn to script with this object!For FREE!",<1,1,1>,1);
+//another slightly more advanced command this one placed a text above the object the script is with it the <1,1,1> is to set the color of the text above the object. The one sitting buy its self sets how dark the text will be (alpha) (1) makes it solid and (0.01) makes it near invisable!
+    }
+//OOO a close to our first command list so when the object starts the script is will say hello avatar and then display a set of words above the object
+
+    touch_start(integer total_number)
+//This is a touch start event cause in this case is somone clicks the object at all it will cause the action inside the brackets:
+    {
+//an open to the touch event.
+        llSay(0, "Touched.");
+//another say action is will say touched when the object is touched
+    }
+//yay the end to another great event
+}
+//the end of the state.
+
+//Just some helpful info
+//for every open bracket there needs to be a close bracket
+//after every action there needs to be a (;) with out the ()
+//defult is always the first state afterwards anything would work
+//anything inbetween a set of "" will not be considerd script but rather words (check say for example)
+//
+//
+//
+//
+//
+//
+//If you have any simple questions feel free to im me at Parsalin Gullwing thank you for your time :) and i hope this helped.
