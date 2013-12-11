@@ -1,0 +1,181 @@
+// There is no try.
+
+
+// a number referencing a listener resource.  You need this later when removing resources.
+integer listener = 0; 
+
+// the default channel to listen on.  (Users type "/692 [command] [options]" if the channel is set to 692)
+integer channelNumber = 692;
+
+// this is the sound that will be played when the object is clicked, or when you tell it to growl.
+// If you don't use an asset UUID, then Make sure this sound is in your inventory.
+string soundName = "e2bf9b63-8597-2863-50e5-d1bb043a49bc";
+//string soundName = "Growl 1.0";
+
+// NOTE: If you don't want to include a sound in your inventory, you can also use an Asset UUID
+// Find the sound in your own inventory
+// Right-Mouse-Click it to get a small properties menu
+// NOTE: You must have full permissions on the sound for this next step to work
+// Click on "Copy Asset UUID"
+// Paste the string into this script
+
+
+// When the object is clicked, a random message will be said.
+// This really makes your pet very fun to play with with lots of friends around.
+list touchReply = [
+"So, I don't have pointy ears, I'm still an elf",
+"Kiss Me!",
+"I'm a song sparrow, and I need love",
+"Vendui, fellow elves",
+"Hey, that tickles!"
+];
+
+// init is short for "initialize".  This method is called when:
+// 1. The script starts up
+// 2. The object is rezzed (or worn)
+// 3. when the object is transferred to another owner
+// 4. when the channel to listen on changes
+init()
+{
+    // if resources are used for a listener, remove it.
+    if(listener != 0)
+    {
+        llListenRemove(listener);
+        listener = 0;
+    }
+    // start listening to the owner on the chosen channel
+    listener = llListen(channelNumber, "", llGetOwner(), "");
+    
+    // let the owner know what channel is being used, and how to get help.
+    llOwnerSay("Listening on channel " + (string)channelNumber + ".  For a list of my commands, say /" + (string)channelNumber + " help");
+}
+
+// this method receives a list and returns a random line of text from it
+string randomText(list values)
+{
+    // determine how many items in the list
+    integer n = llGetListLength(values);
+    
+    // generate a random number between 0 and 999999
+    integer i = llFloor(llFrand(1000000));
+    
+    // find the remainder of dividing i/n
+    i %= n;
+     
+    // return the text at the random index
+    return llList2String(values, i);
+}
+default
+{
+    state_entry()
+    {
+        // script first started
+        init(); 
+    }
+    on_rez(integer start_param)
+    {
+        // rezed or worn
+        init(); 
+    }
+    changed(integer change)
+    {
+        // transferred object to new owner
+        if(change & CHANGED_OWNER) init();
+    }
+    touch_start(integer total_number)
+    {
+        // get a random message
+        string message = randomText(touchReply);
+        
+        // say the message
+        llSay(PUBLIC_CHANNEL, message);
+        
+        // play a sound (growling for example)
+        llPlaySound(soundName, 1);
+    }
+    listen(integer channel, string name, key id, string message)
+    {
+        // assume the whole message is the command
+        string command = message;
+        
+        // assume that nothing follows the command
+        string text = "";
+        
+        // see if message contains a space
+        integer i = llSubStringIndex(message, " ");
+        
+        // if message contains a space
+        if(i != -1)
+        {
+            // set command to everything before the first space
+            command = llGetSubString(message, 0, i - 1);
+
+            // set text to everything after the first space
+            text = llGetSubString(message, i + 1, -1);
+        }
+        
+        // set command to lowercase
+        command = llToLower(command);
+        
+        // check to see what command was called
+        // and take action on it
+        if(command == "say") 
+        {
+            // join in on the conversation
+            llSay(PUBLIC_CHANNEL, text);
+        }
+        else if(command == "whisper") 
+        {
+            // Whisper to people nearby
+            llWhisper(PUBLIC_CHANNEL, text);
+        }
+        else if(command == "shout") 
+        {
+            // shout out to the world
+            llShout(PUBLIC_CHANNEL, text);
+        }
+        else if(command == "rename") 
+        {
+            // change our name
+            llSetObjectName(text);
+            
+            // confirm with owner that change too effect
+            llOwnerSay("My new name is " + text);
+        }
+        else if(command == "growl") 
+        {
+            // let's tell the world who we are
+            // by playing a sound
+            llPlaySound(soundName, 1);
+        }
+        else if(command == "channel")
+        {
+            // change the channel
+            channelNumber = (integer)text;
+            
+            // initialize so the listener changes its' channel.
+            init();
+        }
+        else if(command == "help")
+        {
+            // give a list of all commands and there usage
+            
+            string c = (string)channelNumber;
+            
+            llOwnerSay("List of commands available:");
+            llOwnerSay("To have me talk, say /" + c + " say [text] - /" + c + " say Hello my friends.");
+            llOwnerSay("To have me whisper, say /" + c + " whisper [text] - /" + c + " whisper I can keep a secret.");
+            llOwnerSay("To have me shout, say /" + c + " shout [text] - /" + c + " shout I am the coolest!");
+            llOwnerSay("To give me a new name, say /" + c + " rename [new name] - /" + c + " rename Spot");
+            llOwnerSay("To make me growl, say /" + c + " growl");
+            llOwnerSay("To change the channel I listen on, say /" + c + " [channel] - /" + c + " channel 63");
+            llOwnerSay("To get this list again, say /" + c + " help");
+        }
+        else
+        {
+            // unknown command received.  
+            // Let's tell the owner how to get help.
+            llOwnerSay(command + "?  For a list of commands and there use, say /" + (string)channelNumber + " help.");
+        }
+    }
+}
