@@ -1,0 +1,12 @@
+default
+{
+    link_message(integer sender, integer num, string message, key id)
+    {
+        if(message =="blink")
+        {
+           llSetTexture("White eye", 2);
+           llSleep(1.0);
+           llSetTexture("Bird Eye", 2);
+        }
+    }
+}
