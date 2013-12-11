@@ -1,0 +1,7 @@
+default
+{
+    state_entry()
+    {
+        llLoopSound(llGetInventoryName(INVENTORY_SOUND, 0), 1);
+    }
+}
