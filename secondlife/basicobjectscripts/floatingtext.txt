@@ -1,0 +1,9 @@
+default
+{
+    state_entry()
+    {
+        llAllowInventoryDrop(TRUE); 
+        llSetText("25 Free Textures", <0,1,1>, 1.5);
+       
+    }
+}

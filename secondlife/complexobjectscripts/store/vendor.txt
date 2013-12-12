@@ -1,0 +1,24 @@
+string SUPPLY_FOLDER_NAME = "Medium Marble Fountain Class"; 
+
+default
+{
+    state_entry()
+    {
+        llSetTouchText("Get supplies");
+        llSetText("Supplies for this lesson", < 1.0, 1.0, 0.0>, 1.0);
+    }
+    
+    touch_start(integer total_number)
+    {
+        llInstantMessage(llGetOwner(), llKey2Name(llDetectedOwner(0)) + " ordered supplies!");
+        integer cnt = llGetInventoryNumber(INVENTORY_ALL);
+        list supply =[];
+        integer i = 0;
+        for(; i < cnt; ++i)
+        {
+            supply += [llGetInventoryName(INVENTORY_ALL, i)];
+        }
+        
+        llGiveInventoryList(llDetectedOwner(0), SUPPLY_FOLDER_NAME, supply);
+    }
+}

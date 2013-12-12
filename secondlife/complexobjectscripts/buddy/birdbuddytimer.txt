@@ -1,0 +1,12 @@
+default
+{
+    state_entry()
+    {
+        llSetTimerEvent(15.0);
+    }
+
+    timer()
+    {
+        llMessageLinked(LINK_SET, 0, "blink", NULL_KEY);
+    }
+}

@@ -1,0 +1,11 @@
+vector offset = <0,0,0>;
+rotation rot = <0,0,0,0>;
+
+default
+{
+    state_entry()
+    {
+        llSitTarget(offset,rot);
+    }
+
+}

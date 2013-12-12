@@ -1,0 +1,13 @@
+default
+{
+    state_entry()
+    {
+        llSetTextureAnim(ANIM_ON | ROTATE | LOOP | PING_PONG | SMOOTH, ALL_SIDES, 0,0,0,PI/180,0.02);
+    }
+
+    on_rez (integer start_param) 
+    { 
+        llResetScript();
+    } 
+
+}
