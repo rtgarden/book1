@@ -1,0 +1,81 @@
+after a severe head injury in 2007 I began spending significant time in second life as 
+a way of staying mentally active while recouperating in a confined manner. I decided to "locate"
+my studio in second life for a year as a method of inquiry into that environment and as a
+means of exploring the process of building in their 3D environment and using their scripting language.
+Part of second life culture is the availability of classes. In these classes varoious levels of building and 
+scrpting were taught. Some of the classes pretty much included all bthe parts like a puzzle and the participants
+were just expected to put it together and load a script into part of it to make it work. Some of the classes 
+were more complex and actually would take you through the process of writing the script yourself. 
+
+Many of the scripts in my library were received from "feebie" boxes, and some are part of classes that I took.
+My intention here is to sort out the materials I have saved on my avatar there literally before its too late.
+
+My studio space for a year was located in a building which I purchased from an in world designer 
+named "Ebisuya" from japan. Most of my files and notes at tha time are called "ebisuya" since I
+tended to refer to the second life studio as "the ebisuya".
+
+At the same time that I was exploring Second Life in its relatively fresh and booming days I was listening to
+a audio recording of the book "Snowcrash" by Neal Stephenson. There is a strong relationship between the 
+conceptual background of sl and Stephensons work. Realistically it is very based on "The Sims" with an almost
+identical level of abstraction and sense of proportion. Overall the textural sensation is one of inhabiting a 
+sort of twelve inch doll world, in a sort of akward jerky motion you scoot around and fly and interact with objects,
+many of which are scripted so that you can either "drive" or "fly" them around.
+
+One of my favorite things is a scripted pegasus which I sometimes fly around.
+
+Overall some of the most fun I had hanging out was volunteering at the 2008 burningman themed area
+where we were all allowed to build camps and wander around. 
+
+One of my initial attractions to the "game" environment was the presence of many of the "Gnu"
+crowd. any of the free textures and sounds and scripts were shared around
+with "Gnu" to indicate the freely shared or open statud of the media file. As I began to 
+build a new direction of inquiry for myself as the "Open Source Artist" I began to look 
+at second life as a potential creative marketplace for creating some unique learning experiences 
+located in second life. After much inquiry I realized that the restrictions of the medium were 
+severe because even with open sharing essentially the environment is a silo. Your work is only 
+meaningful in an environment where compensation and ownership are not very clear or very even handed.
+
+
+
+originally I had heard about second life in the context of assisted living. Eventually I felt that applications
+that tied the virtual environment in with the real world could be afruitful arena, likely however 
+only in "The Grid", which was the open source version of the entire world construct that companies like IBM 
+ worked with second life to develop. At frist it seemed like they might be building their own grid, their 
+ own contained environment for meetings and tutorials and such and perhaps they did. Now that time has 
+ passed I wonder if they use it at all.
+ 
+ My first scripting inquiry was wanting to make a school of fish in a koi pond. This seemingly simple
+  pursuit kept me going for around the first six months. I spent a lot of time looking at shops that have fish
+   and also learning how to sculpt and texture and animate water. Sometimes in the ebisuya it was fish everywhere.
+   
+   
+   The first steps to building and scripting mostly involved poseballs and light switches. Poseballs allow 
+   your avatar character to sit. Of course I mean sitting in the sense that several sitting poses are available
+   and one of the intersting things about second life is this menu of expressive movements and poses that
+   are fairly standardized and available for your character.
+   
+   after that I learned how to create a door locking system in order to create some physical privacy for doing
+   things like changing my avatars clothes inside the tudio and other sorts of akwards experiments. Around the studio I experimented
+   with plants and foliage and water while I figured out my pond skills.
+   
+   almost at the same time that I figured out how to do the swarm fish with a particle system I became 
+    fascinated with the rezzing tools in the scripted environment. These tools are used to generate complex objects 
+    like hair and jewelry by repeatedly creating specific objects in a slightly altered physical path.
+    
+    
+    One of the things I was able to do in second life was spend time hanging out with my godson who lives at the
+    other end of california while he was doing his calculus homework. He had experience crafting and making items in WOW
+    so he would coach me on my 3D building skills while I would go over his calc homework with him some.
+    Basically we were using instant messaging and occasionally goofing off and teleporting around for fun. It was really 
+    helpful in my recovery from my head injury since an eye injury was part of the situation and t really helped me stay 
+    mentally active even while keeping my head upright and letting my eye heal.
+    
+    By the time the year was over I was ready to end the experiment for numbers of reasons nt worth detailing.
+    The environment suffered constantly from lag and unpredictability as well as the blunderings of
+     people learning the controls, many more "noob" one time visits that steady moving regulars. Probably 
+     that is one f the reasons that the second life burningman scene was actually really fun was that 
+     all of the people hanging out there could already move around and build and use the environment with 
+     some grace.
+     
+     My intention here is to go through the scripts and store them with related class images and directions that
+      might even make them useful to someone who enjoys the environment, or even better for transposition to the grid.
