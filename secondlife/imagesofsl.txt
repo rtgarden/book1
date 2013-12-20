@@ -1,0 +1,7 @@
+develop a repository of meaningful images from the ebisuya project.
+use dropbox for storage
+create some examples of education efforts, environments, and sandboxes
+
+use a few of the documented classes to create a meaningful tutorial
+
+discuss virtualization with examples from sl.
