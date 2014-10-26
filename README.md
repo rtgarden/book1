@@ -8,8 +8,17 @@ destination for pennywhistle lilypad files
  
  
  create rough babys first pennywhistle book
+ 
+ initial inspiration "Baby's first Opera Book"
+ 
+Primary idea is a book with whimsical images related to the songs which can be shared with baby while perhaps
 
-destination for decond life scripts as well as
+learning to play the songs on pennywhistle or ukelaile
+
+
+ALSO-
+
+destination for second life scripts as well as
  images and the ebisuya project.
 
 
